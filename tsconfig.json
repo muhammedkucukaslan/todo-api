@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "types": ["jest", "node"],
+        "module": "ESNext",
+        "target": "ESNext",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "strictFunctionTypes": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "noFallthroughCasesInSwitch": true,
+        "noEmitOnError": true,
+        "skipDefaultLibCheck": true
+    },
+    "include": ["src", "src/**/*.test.ts"],
+    "exclude": ["node_modules"],
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node", "express"]
+}

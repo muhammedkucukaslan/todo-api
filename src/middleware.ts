@@ -23,7 +23,6 @@ export default async function middleware(
     const isAuthPageRequest = isAuthPage(originalUrl);
 
     if (isPublicPage(originalUrl)) {
-        console.log('Public page matched:', originalUrl);
         return next();
     }
 

@@ -41,7 +41,6 @@ export class AuthRepository {
                 `INSERT INTO users (username, email, password) VALUES (?, ?, ?)`,
                 [username, email, password]
             );
-            console.log(result);
             if (result.rowsAffected === 0) {
                 return createErrorResult('Error signing up', 'SERVER_ERROR');
             }
